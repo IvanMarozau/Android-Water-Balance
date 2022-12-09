@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Water_Balance</string>
+    <string name="drinks">Nápoje</string>
+    <string name="history">Historie</string>
+    <string name="statistics">Statistika</string>
+    <string name="more">Více</string>
+    <string name="to_drink">Pít</string>
+    <string name="time">"Čas: "</string>
+    <string name="height">"Výška: "</string>
+    <string name="weight">Hmotnost:</string>
+    <string name="norm_of_water">Norma vody:</string>
+    <string name="height_cm">Výška, cm</string>
+    <string name="choose">Vyberte si</string>
+    <string name="weight_kg">Hmotnost, kg</string>
+    <string name="version">Verze:</string>
+</resources>

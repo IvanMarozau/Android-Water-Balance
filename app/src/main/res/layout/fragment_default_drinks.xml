@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".DefaultDrinksFragment"
+    android:background="@color/black"
+    >
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/defaultDrinkList"
+        android:layout_width="match_parent"
+        android:layout_height="431dp"
+        android:layout_marginTop="240dp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="160dp"
+        android:theme="@style/ProgressBar"
+        />
+    <TextView
+        android:id="@+id/progressShow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="50sp"
+        android:layout_marginTop="60dp"
+        android:layout_marginStart="140dp"
+        android:textColor="@color/white"/>
+    <TextView
+        android:id="@+id/amountWater"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="185dp"
+        android:layout_marginStart="20dp"
+        android:textColor="@color/white"/>
+    <TextView
+        android:id="@+id/normWater"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="185dp"
+        android:layout_marginStart="320dp"
+        android:textColor="@color/white"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/drinks"
+        android:textSize="30sp"
+        android:layout_marginTop="10sp"
+        android:layout_marginStart="20sp"
+        android:textColor="@color/white"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

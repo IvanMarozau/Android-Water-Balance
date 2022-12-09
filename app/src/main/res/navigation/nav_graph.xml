@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@+id/DefaultDrinksFragment">
+
+    <fragment
+        android:id="@+id/DefaultDrinksFragment"
+        android:name="cz.mendelu.water_balance.DefaultDrinksFragment"
+        android:label="Drinks"
+        tools:layout="@layout/fragment_default_drinks">
+
+        <action
+            android:id="@+id/action_DefaultList_to_AddAmount"
+            app:destination="@+id/AddAmountFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/AddAmountFragment"
+        android:name="cz.mendelu.water_balance.AddAmountFragment"
+        android:label="Add"
+        tools:layout="@layout/fragment_add_amount">
+
+    <argument
+        android:name="id"
+        app:argType="long"
+        android:defaultValue="-1L">
+
+    </argument>
+
+    </fragment>
+    <fragment
+        android:id="@+id/HistoryFragment"
+        android:name="cz.mendelu.water_balance.HistoryFragment"
+        android:label="fragment_history"
+        tools:layout="@layout/fragment_history" >
+
+        <action
+            android:id="@+id/action_HistoryFragment_to_EditAmount"
+            app:destination="@+id/EditAmountFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/PersonFragment"
+        android:name="cz.mendelu.water_balance.PersonFragment"
+        android:label="fragment_person"
+        tools:layout="@layout/fragment_person" >
+
+        <action
+            android:id="@+id/action_Person_to_AddHeight"
+            app:destination="@+id/AddHeightFragment" />
+        <action
+            android:id="@+id/action_Person_to_AddWeight"
+            app:destination="@+id/AddWeightFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/StatisticsFragment"
+        android:name="cz.mendelu.water_balance.StatisticsFragment"
+        android:label="fragment_statistics"
+        tools:layout="@layout/fragment_statistics" />
+    <fragment
+        android:id="@+id/AddHeightFragment"
+        android:name="cz.mendelu.water_balance.AddHeightFragment"
+        android:label="fragment_add_height"
+        tools:layout="@layout/fragment_add_height" />
+    <fragment
+        android:id="@+id/AddWeightFragment"
+        android:name="cz.mendelu.water_balance.AddWeightFragment"
+        android:label="fragment_add_weight"
+        tools:layout="@layout/fragment_add_weight" />
+    <fragment
+        android:id="@+id/EditAmountFragment"
+        android:name="cz.mendelu.water_balance.EditAmountFragment"
+        android:label="fragment_edit_amount"
+        tools:layout="@layout/fragment_edit_amount" >
+
+        <argument
+            android:name="id"
+            app:argType="long"
+            android:defaultValue="-1L">
+        </argument>
+
+    </fragment>
+
+
+</navigation>

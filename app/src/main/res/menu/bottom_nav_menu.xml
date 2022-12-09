@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/DefaultDrinksFragment"
+        android:icon="@drawable/ic_add"
+        android:title="@string/drinks"/>
+
+    <item
+        android:id="@+id/HistoryFragment"
+        android:icon="@drawable/ic_history"
+        android:title="@string/history" />
+
+    <item
+        android:id="@+id/StatisticsFragment"
+        android:icon="@drawable/ic_statistics"
+        android:title="@string/statistics" />
+    <item
+        android:id="@+id/PersonFragment"
+        android:icon="@drawable/ic_more"
+        android:title="@string/more" />
+
+</menu>
